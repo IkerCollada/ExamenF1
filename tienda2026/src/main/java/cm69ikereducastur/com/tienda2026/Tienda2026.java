@@ -13,4 +13,12 @@ public class Tienda2026 {
     public static void main(String[] args) {
         
     }
+    
+    public static void validarDNI(String dni) {
+    //verificar que el DNI tiene un formato válido.
+        if (dni.isBlank() || !dni.matches("")) {
+            return false;
+        }
+    }
+    
 }
